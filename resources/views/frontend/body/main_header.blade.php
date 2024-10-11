@@ -71,11 +71,11 @@
                                 </li>
 
                                     <li>
-                                        <a class="active" href="index.html">Home</a>
+                                        <a class="active" href="index.html">Home  </a>
                                         
                                     </li>
                                     <li>
-                                        <a href="page-about.html">About us</a>
+                                        <a href="page-about.html">About</a>
                                     </li>
                                     
                                     <li>

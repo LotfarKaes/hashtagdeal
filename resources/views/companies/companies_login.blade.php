@@ -30,7 +30,7 @@
 					<div class="col mx-auto">
 						<div class="mb-4 text-center">
 							<!-- <img src="{{ asset('adminbackend/assets/images/logo-img.png') }}" width="180" alt="" /> -->
-							<h4 class="logo-text">HashTagDeals</h4>
+							<h4 class="logo-text">#TagDeals</h4>
 						</div>
 						<div class="card">
 							<div class="card-body">
