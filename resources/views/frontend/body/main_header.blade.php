@@ -71,7 +71,7 @@
                                 </li>
 
                                     <li>
-                                        <a class="active" href="index.html">Home  </a>
+                                        <a class="active" href="index.html">Home from deal  </a>
                                         
                                     </li>
                                     <li>
