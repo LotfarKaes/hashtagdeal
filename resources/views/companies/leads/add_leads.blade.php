@@ -28,7 +28,7 @@
 
 <div class="card">
   <div class="card-body p-4">
-	  <h5 class="card-title">Add New Lead</h5>
+	  <h5 class="card-title">Add lead manually</h5>
 	  <hr/>
 
 <form id="myForm" method="post" action="{{ route('companies.store.basic.product') }}" enctype="multipart/form-data" >
@@ -38,15 +38,19 @@
 	    <div class="row">
 		   <div class="col-lg-6">
            <div class="border border-3 p-4 rounded">
-			
-
+		
 			  <div class="form-group mb-3">
-				<label for="inputProductTitle" class="form-label">Customer</label><span class="required-label"> *</span>
+				<label for="inputProductTitle" class="form-label">Customer name</label><span class="required-label"> *</span>
 				<input type="text" name="product_name" class="form-control" id="inputProductTitle" value="{{ $products->product_name ?? '' }}">
 			  </div>
 
 			  <div class="form-group mb-3">
 				<label for="inputProductTitle" class="form-label">Organization</label><span class="required-label"> *</span>
+				<input type="text" name="product_name" class="form-control" id="inputProductTitle" value="{{ $products->product_name ?? '' }}">
+			  </div>
+			  
+			  <div class="form-group mb-3">
+				<label for="inputProductTitle" class="form-label">Organization number</label><span class="required-label"> *</span>
 				<input type="text" name="product_name" class="form-control" id="inputProductTitle" value="{{ $products->product_name ?? '' }}">
 			  </div>
 
@@ -57,28 +61,73 @@
 
 			  <div class="form-group mb-3">
 				<label for="inputProductTitle" class="form-label">Title</label><span class="required-label"> *</span>
-				<input type="text" name="product_name" class="form-control" id="inputProductTitle" value="{{ $products->product_name ?? '' }}">
+				<input type="text" name="title" class="form-control" id="inputProductTitle" value="{{ $products->product_name ?? '' }}">
 			  </div>
 
-			  <div class="form-group mb-3">
-				<label for="inputProductTitle" class="form-label">Description</label><span class="required-label"> *</span>
-				<input type="text" name="product_name" class="form-control" id="inputProductTitle" value="{{ $products->product_name ?? '' }}">
-			  </div>
+			 <div class="row g-3">
+				<div class="form-group col-md-6">
+				<label for="inputProductTitle" class="form-label">Value</label><span class="required-label"> *</span>
+				<input type="text" name="title" class="form-control" id="inputProductTitle" value="{{ $products->product_name ?? '' }}">
+				</div>
+				  <div class="col-md-6">
+				  <label for="inputProductType" class="form-label">Currency</label>
+					<select name="brand_id" class="form-select" id="inputProductType">
+						<option></option>
+						<option value="1">Swedish Krona (SEK)</option>
+						<option value="2">Danish Krone (DKK)</option>
+						<option value="3">Euro (EUR)</option>
+						<option value="4">US Dollar (USD)</option>
+						<option value="5">Norwegian Krone (NOK)</option>
+					  </select>
+				  </div>
+			 </div>
 
-			  <div class="mb-3">
+
+			  <div class="mb-3 pt-3">
 				<label for="inputProductTitle" class="form-label">Label</label><span class="required-label"> *</span>
 				<input type="text" name="product_color" class="form-control visually-hidden" data-role="tagsinput" value="Red,Blue,Black">
 			  </div>
 			  
-			  <div class="mb-3">
+			
+			  <div class="form-group mb-3">
 				<label for="inputProductTitle" class="form-label">Owner</label><span class="required-label"> *</span>
-				<input type="text" name="product_color" class="form-control visually-hidden" data-role="tagsinput" value="Red,Blue,Black">
+				<input type="text" name="owner" class="form-control" id="inputProductTitle" value="{{ $products->product_name ?? '' }}">
 			  </div>
 
 
+			  <div class="row g-3">
+				<div class="form-group col-md-6">
+					<label for="inputPrice" class="form-label">Phone</label>
+					<input type="text" name="selling_price" class="form-control" id="inputPrice" placeholder="">
+				  </div>
+				  <div class="col-md-6">
+					<label for="inputCompareatprice" class="form-label">Email </label>
+					<input type="text" name="discount_price" class="form-control" id="inputCompareatprice" placeholder="">
+				  </div>
 
-			  <div class="form-group mb-3">
-				<label for="inputProductDescription" class="form-label">Short Description</label><span class="required-label"> *</span>
+				  	<div class="form-group col-md-6">
+					<label for="inputPrice" class="form-label">Phone</label> <span class="text-muted"><cite>(Additional phone)</cite></span>
+					<input type="text" name="selling_price" class="form-control" id="inputPrice" placeholder="">
+				  </div>
+				  <div class="col-md-6">
+					<label for="inputCompareatprice" class="form-label">Email <span class="text-muted"><cite>(Additional email)</cite></span></label>
+					<input type="text" name="discount_price" class="form-control" id="inputCompareatprice" placeholder="">
+				  </div>
+				</div>
+
+				
+			 
+            </div>
+		   </div>
+		   <div class="col-lg-6">
+			<div class="border border-3 p-4 rounded">
+              <div class="row g-3">
+			  <p class="fw-bold">Additional info</p>
+				<hr>
+
+				 
+				  <div class="form-group mb-3">
+				<label for="inputProductDescription" class="form-label">Description</label><span class="required-label"> *</span>
 				<textarea name="short_descp" class="form-control" id="inputProductDescription" rows="3"></textarea>
 			  </div>
 
@@ -87,9 +136,7 @@
 				<textarea id="mytextarea" name="long_descp">Hello, World!</textarea>
 			  </div>
 
-
-
-  			<div class="form-group mb-3">
+			  <div class="form-group mb-3">
 				<label for="inputProductTitle" class="form-label">Upload file</label><span class="required-label"> !</span>
 				<input name="product_thambnail" class="form-control" type="file" id="formFile" onChange="mainThamUrl(this)" >
 
@@ -97,59 +144,9 @@
 			  </div>
 
 
-
-			 
-            </div>
-		   </div>
-		   <div class="col-lg-6">
-			<div class="border border-3 p-4 rounded">
-              <div class="row g-3">
-				PERSON<hr>
-				<div class="form-group col-md-6">
-					<label for="inputPrice" class="form-label">Phone</label>
-					<input type="text" name="selling_price" class="form-control" id="inputPrice" placeholder="">
-				  </div>
-				  <div class="col-md-6">
-					<label for="inputCompareatprice" class="form-label">Email </label>
-					<input type="text" name="discount_price" class="form-control" id="inputCompareatprice" placeholder="">
-				  </div>
-				 
-
-				  <div class="col-12">
-				  ORGANIZATION<hr>
-				  	<div class="form-group mb-3">
-						<label for="inputProductTitle" class="form-label">Customer</label><span class="required-label"> *</span>
-						<input type="text" name="product_name" class="form-control" id="inputProductTitle" value="{{ $products->product_name ?? '' }}">
-					</div>
-
-					<div class="form-group mb-3">
-						<label for="inputProductTitle" class="form-label">Organization</label><span class="required-label"> *</span>
-						<input type="text" name="product_name" class="form-control" id="inputProductTitle" value="{{ $products->product_name ?? '' }}">
-					</div>
-
-					<div class="form-group mb-3">
-						<label for="inputProductTitle" class="form-label">Organization</label><span class="required-label"> *</span>
-						<input type="text" name="product_name" class="form-control" id="inputProductTitle" value="{{ $products->product_name ?? '' }}">
-					</div>
-
-				    <div class="row g-3"><br>
-						PERSON<hr>
-				<div class="form-group col-md-6">
-					<label for="inputPrice" class="form-label">Phone</label>
-					<input type="text" name="selling_price" class="form-control" id="inputPrice" placeholder="">
-				  </div>
-				  <div class="col-md-6">
-					<label for="inputCompareatprice" class="form-label">Email </label>
-					<input type="text" name="discount_price" class="form-control" id="inputCompareatprice" placeholder="">
-				  </div>
-				 
-				</div>
-				 <hr>
-
-
 				  <div class="col-12">
 					  <div class="d-grid">
-					  	<input type="submit" class="btn btn-primary px-4" value="Save Changes" />
+					  	<input type="submit" class="btn btn-success px-4" value="Save" />
                           
 					  </div>
 				  </div>
