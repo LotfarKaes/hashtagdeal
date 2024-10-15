@@ -40,7 +40,7 @@
   	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.css" /> -->
   
 	
-	<title>Admin Dashboard1</title>
+	<title>Admin Dashboard</title>
 
 	<!-- @vite('resources/css/app.css') -->
 	

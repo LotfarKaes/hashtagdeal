@@ -28,15 +28,15 @@
 					</a>
 				</li>
 
-                <li>
+                <!-- <li>
 					<a href="{{ route('companies.profile')}}">
 						<div class="parent-icon"><i class='bx bx-card'></i>
 						</div>
 						<div class="menu-title">Profile</div>
 					</a>
-				</li>
+				</li> -->
 
-				<li class="menu-label">Generate and track leads</li>
+				<!-- <li class="menu-label">Generate and track leads</li> -->
 				<li>
 					<a href="javascript:;" class="has-arrow">
 						<div class="parent-icon"><i class="bx bx-list-plus"></i>
@@ -53,7 +53,7 @@
 					</ul>
 				</li>
 
-				<li class="menu-label">Listing item</li>
+				<!-- <li class="menu-label">Listing item</li> -->
 				<li>
 					<a href="javascript:;" class="has-arrow">
 						<div class="parent-icon"><i class="bx bx-list-plus"></i>
@@ -157,13 +157,13 @@
 					</a>
 				</li>
 
-				<li>
+				<!-- <li>
 					<a class="" href="javascript:;">
 						<div class="parent-icon"><i class="bx bx-search"></i>
 						</div>
 						<div class="menu-title">Search</div>
 					</a>
-				</li>
+				</li> -->
 
 				<li>
 					<a class="" href="{{ route('companies.interested')}}">
@@ -173,7 +173,7 @@
 					</a>
 				</li>
 
-				<li>
+				<!-- <li>
 					<a class="" href="javascript:;">
 						<div class="parent-icon"><i class="bx bx-user-plus"></i>
 						</div>
@@ -195,9 +195,9 @@
 						</div>
 						<div class="menu-title">Contact us</div>
 					</a>
-				</li>
+				</li> -->
 
-				<li>
+				<!-- <li>
 
 					<ul>
 						<li> <a href="map-google-maps.html"><i class="bx bx-right-arrow-alt"></i>Google Maps</a>
@@ -221,7 +221,7 @@
 						</div>
 						<div class="menu-title">Support</div>
 					</a>
-				</li>
+				</li> -->
 			</ul>
 			<!--end navigation-->
 		</div>
