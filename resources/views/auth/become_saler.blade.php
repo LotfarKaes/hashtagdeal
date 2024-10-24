@@ -62,7 +62,7 @@
         <input type="email"  id="email" required="" name="email" placeholder="Email" />
     </div>
 
- <div class="form-group">
+ <!-- <div class="form-group">
         <input type="text" id="phone" required="" name="phone" placeholder="Phone" />
     </div>
 
@@ -76,8 +76,16 @@
             <option value="2025">2025</option>
             <option value="2026">2026</option>
         </select>
-    </div>
+    </div> -->
 
+    <div class="col-md-12">
+        <label for="inputProductType" class="form-label fw-bold">Registration with</label>
+                <select name="role" class="form-select" id="inputProductType">
+                    <option></option>
+                    <option value="companies">Company</option>
+                    <option value="sales">Worker</option>
+                </select>
+        </div>
 
     <div class="form-group">
         <input required=""  id="password"  type="password" name="password" placeholder="Password" />

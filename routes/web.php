@@ -113,3 +113,5 @@ Route::get('/sales/login', [SalesController::class, 'SalesLogin'])->name('sales.
 //Route::get('/sales/login', [SalesController::class, 'SalesLogin'])->name('sales.login');
 Route::get('/become/saler', [SalesController::class, 'Becomesaler'])->name('become.saler');
 Route::post('/saler/register', [SalesController::class, 'SalerRegister'])->name('saler.register');
+Route::post('/add/register', [AdminController::class, 'AddRegister'])->name('add.register');
+

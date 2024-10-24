@@ -53,11 +53,24 @@
 					</ul>
 				</li>
 
+				<li>
+					<a href="javascript:;" class="has-arrow">
+						<div class="parent-icon"><i class='bx bx-dialpad-alt' ></i>
+						</div>
+						<div class="menu-title">Deals</div>
+					</a>
+					<ul>
+						<li> <a href="{{ route('companies.add.leads')}}"><i class="bx bx-grid-small"></i>Add deals</a>
+						</li>
+						<li> <a href="{{ route('companies.all.leads')}}"><i class="bx bx-grid-small"></i>All deals</a>
+						</li>
+					</ul>
+				</li>
+
 				<!-- <li class="menu-label">Listing item</li> -->
 				<li>
 					<a href="javascript:;" class="has-arrow">
-						<div class="parent-icon"><i class="bx bx-list-plus"></i>
-						</div>
+						<div class="parent-icon"><i class="bx bx-list-plus"></i></div>
 						<div class="menu-title">Listing item</div>
 					</a>
 					<ul>
@@ -123,7 +136,7 @@
 				</li> -->
 
 				
-				<li class="menu-label">Others</li>
+				<!-- <li class="menu-label">Others</li> -->
 			
 				<li>
 				<a href="{{ route('companies.encounters')}}">
@@ -170,6 +183,15 @@
 						<div class="parent-icon"><i class="bx bx-heart"></i>
 						</div>
 						<div class="menu-title">Interested</div>
+					</a>
+				</li>
+
+
+				<li>
+					<a class="" href="#">
+						<div class="parent-icon"><i class="bx bxs-contact"></i>
+						</div>
+						<div class="menu-title">Contacts</div>
 					</a>
 				</li>
 

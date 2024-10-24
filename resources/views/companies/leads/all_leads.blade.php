@@ -23,16 +23,9 @@
 					</div>
 
 
-
 					<div style= "padding-left:100px;">
-
-					<button type="button"  class="btn btn-success"><a href="{{ route('companies.basic.product.add') }}"></a> + Lead</button>
-					<button type="button"  class="btn btn-secondary"><i class='bx bx-import'></i><a href="{{ route('companies.basic.product.add') }}"></a>Import data</button>
-
-					
-				
-
-						
+						<a href="{{ route('companies.add.leads')}}" class="btn btn-success"><i class="fa-solid fa-plus"></i> Lead</a> 	
+						<a href="{{ route('companies.all.leads')}}" class="btn btn-secondary"><i class="fa-solid fa-file-import"></i> Import file</a> 			
 					</div>
 
 

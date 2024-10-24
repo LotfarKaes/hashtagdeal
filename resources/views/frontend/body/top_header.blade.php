@@ -61,10 +61,10 @@
                 </div>
 
 
-                        <li><a class="language-dropdown-active" href="javascript:void(0)">EUR <i class="fi-rs-angle-small-down"></i></a><ul class="language-dropdown"><li><a href="https://nest.botble.com/currency/switch/USD">USD</a></li><li><a href="https://nest.botble.com/currency/switch/EUR">EUR</a></li><li><a href="https://nest.botble.com/currency/switch/VND">VND</a></li><li><a href="https://nest.botble.com/currency/switch/NGN">NGN</a></li></ul></li>
+                        <li><a class="language-dropdown-active" href="javascript:void(0)">EUR</a><ul class="language-dropdown"><li><a href="https://nest.botble.com/currency/switch/USD">USD</a></li><li><a href="https://nest.botble.com/currency/switch/EUR">EUR</a></li><li><a href="https://nest.botble.com/currency/switch/VND">VND</a></li><li><a href="https://nest.botble.com/currency/switch/NGN">NGN</a></li></ul></li>
                                 
                         <li>
-                        <a class="language-dropdown-active" href="#">English <i class="fi-rs-angle-small-down"></i></a>
+                        <a class="language-dropdown-active" href="#">English</a>
                         <ul class="language-dropdown">
                             <li>
                                 <a href="#"><img src="{{ asset('frontend/assets/imgs/theme/flag-fr.png') }}" alt="" />Français</a>
@@ -76,6 +76,10 @@
                                 <a href="#"><img src="{{ asset('frontend/assets/imgs/theme/flag-ru.png') }}" alt="" />Pусский</a>
                             </li>
                         </ul>
+                    </li>
+
+                    <li>
+                        <a class="language-dropdown-active" href="{{ route('register')}}">Registration</a>
                     </li>
                 
                 </ul>

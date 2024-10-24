@@ -151,11 +151,11 @@ class SalesController extends Controller
             'name' => $request->name,
             'username' => $request->username,
             'email' => $request->email,
-            'phone' => $request->phone,
-            'location' => $request->location,
+            // 'phone' => $request->phone,
+            // 'location' => $request->location,
             'password' => Hash::make($request->password),
-            'role' => 'sales',
-            'status' => 'inactive',
+            'role' => $request->role,
+            'status' => 'active',
         ]);
 
           $notification = array(
@@ -163,7 +163,7 @@ class SalesController extends Controller
             'alert-type' => 'success'
         );
 
-        return redirect()->route('sales.login')->with($notification);
+        return redirect()->route('login')->with($notification);
     } // End method
     
     public function SalesSellerMap(Request $request){
