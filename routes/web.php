@@ -56,6 +56,9 @@ Route::middleware(['auth','role:sales'])->group(function(){
     Route::get('/sales/change/password', [SalesController::class, 'salesChangePassword'])->name('sales.change.password');
     Route::post('/sales/update/password', [SalesController::class, 'salesUpdatePassword'])->name('sales.update.password');
     Route::get('/sales/encounters', [SalesController::class, 'salesEncounters'])->name('sales.encounters');
+    Route::get('/sales/encounters/overview', [SalesController::class, 'salesEncountersOverview'])->name('sales.encounters.overview');
+    Route::get('/sales/encounters/jobs', [SalesController::class, 'salesEncountersJobs'])->name('sales.encounters.jobs');
+
     Route::get('/sales/seller/map', [SalesController::class, 'SalesSellerMap'])->name('sales.seller.map');
 
 

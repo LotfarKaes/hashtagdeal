@@ -134,6 +134,19 @@ class SalesController extends Controller
         return view('sales.sales_encounters_view',compact('companiesData'));
     } // End method
 
+    // public function salesEncountersOverview(Request $request){
+    //     $id = $request->id;
+    //     $companiesData = User::where('status','active')->where('id', $id)->get();
+    //     return view('sales.sales_encounters_view',compact('companiesOverview'));
+    // } // End method
+
+    // public function salesEncountersJobs(Request $request){
+    //     $id = $request()->id;
+    //     $companiesData = User::where('status','active')->where('id', $id)->get();
+    //     return view('sales.sales_encounters_view',compact('companiesJobs'));
+    // } // End method
+
+
     public function Becomesaler(){
         
         return view('auth.become_saler');

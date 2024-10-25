@@ -186,13 +186,32 @@
 					</a>
 				</li>
 
-
 				<li>
-					<a class="" href="#">
-						<div class="parent-icon"><i class="bx bxs-contact"></i>
+					<a href="javascript:;" class="has-arrow">
+						<div class="parent-icon"><i class='bx bxs-contact' ></i>
 						</div>
 						<div class="menu-title">Contacts</div>
 					</a>
+					<ul>
+						<li> <a href="#"><i class="bx bx-grid-small"></i>People</a>
+						</li>
+						<li> <a href="#"><i class="bx bx-grid-small"></i>Organization</a>
+						</li>
+					</ul>
+				</li>
+
+				<li>
+					<a href="javascript:;" class="has-arrow">
+						<div class="parent-icon"><i class='bx bx-cog' ></i>
+						</div>
+						<div class="menu-title">Settings</div>
+					</a>
+					<ul>
+						<li> <a href="#"><i class="bx bx-grid-small"></i>Import data</a>
+						</li>
+						<li> <a href="#"><i class="bx bx-grid-small"></i>Export data</a>
+						</li>
+					</ul>
 				</li>
 
 				<!-- <li>

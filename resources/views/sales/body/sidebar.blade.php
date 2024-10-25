@@ -36,7 +36,6 @@
 					</a>
 				</li>
 
-				<li class="menu-label">Charts & Maps</li>
 				<li>
 					<a href="{{ route('sales.seller.map')}}">
 						<div class="parent-icon"><i class="bx bx-line-chart"></i>
