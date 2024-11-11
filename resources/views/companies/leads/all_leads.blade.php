@@ -6,7 +6,6 @@
 .table-column-value{
 	padding-top: 18px !important;
 }
-
 </style>
 <div class="page-content">
 				<!--breadcrumb-->
@@ -25,7 +24,7 @@
 
 					<div style= "padding-left:100px;">
 						<a href="{{ route('companies.add.leads')}}" class="btn btn-success"><i class="fa-solid fa-plus"></i> Lead</a> 	
-						<a href="{{ route('companies.all.leads')}}" class="btn btn-secondary"><i class="fa-solid fa-file-import"></i> Import file</a> 			
+						<a href="{{ route('companies.import.view')}}" class="btn btn-secondary"><i class="fa-solid fa-file-import"></i> Import file</a> 			
 					</div>
 
 
@@ -46,18 +45,12 @@
 								<thead>
 			<tr>
 				<th>Sl</th>
-				<th>Created </th>
-				<th>Title</th>
-				<th>Street </th>
-				<th>City </th>
-				<th>Country Code </th>
-				<th>Website </th> 
-				<th>Satus</th>
-				<th>Phone</th> 
-				<th>Source</th>
-				<th>Category Name </th> 
-				<th>Action</th>
-				
+				<th>Title </th>
+				<th>Value</th>
+				<th>Currency of Value</th>
+				<th>Contact person</th>
+				<th>Organizations</th>
+
 			</tr>
 		</thead>
 		<tbody>
@@ -104,20 +97,6 @@
 			 
 		 
 		</tbody>
-		<tfoot>
-			<tr>
-			<th>Sl</th>
-				<th>Created </th>
-				<th>Title</th>
-				<th>Street </th>
-				<th>City </th>
-				<th>Country Code </th>
-				<th>Website </th> 
-				<th>Phone</th> 
-				<th>Category Name </th> 
-			</tr>
-			</tr>
-		</tfoot>
 	</table>
 						</div>
 					</div>

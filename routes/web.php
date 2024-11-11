@@ -7,7 +7,10 @@ use App\Http\Controllers\SalesController;
 use App\Http\Controllers\CompaniesController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\LeadsController;
+use App\Http\Controllers\DealsController;
 use App\Http\Middleware\RedirectIfAuthenticated;
+use App\Http\Controllers\ImportExportController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -104,6 +107,22 @@ Route::middleware(['auth','role:companies'])->group(function(){
 
     });
 
+     // Deals 
+     Route::controller(DealsController::class)->group(function(){
+        Route::get('companies/all/deals' , 'AllDeals')->name('companies.all.deals');
+        Route::get('companies/add/deals' , 'AddDeals')->name('companies.add.deals');
+
+    });
+
+
+    // Import export for companies  
+    Route::controller(ImportExportController::class)->group(function(){
+        Route::get('setting/import' , 'ImportView')->name('companies.import.view');
+        Route::post('setting/add/import' , 'AddImport')->name('companies.add.import');
+        Route::get('setting/import/list' , 'ImportListView')->name('companies.import.list.view');
+
+
+    });
     
 
 });

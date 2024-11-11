@@ -6,20 +6,20 @@
 
 				<!--breadcrumb-->
 				<div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
-					<div class="breadcrumb-title pe-3">Add New Lead</div>
+					<div class="breadcrumb-title pe-3">Add New deal</div>
 					<div class="ps-3">
 						<nav aria-label="breadcrumb">
 							<ol class="breadcrumb mb-0 p-0">
 								<li class="breadcrumb-item"><a href="javascript:;"><i class="bx bx-home-alt"></i></a>
 								</li>
-								<li class="breadcrumb-item active" aria-current="page">Create lead</li>
+								<li class="breadcrumb-item active" aria-current="page">Create deal</li>
 							</ol>
 						</nav>
 					</div>
 
 					<div class="ms-auto">
 						<div class="btn-group">
-						<a href="{{ route('companies.all.leads')}}" class="fa fa-times fa-2xl"></a> 		
+						<a href="{{ route('companies.all.deals')}}" class="fa fa-times fa-2xl"></a> 		
 						</div>
 					</div>
 					 
@@ -28,7 +28,7 @@
 
 <div class="card">
   <div class="card-body p-4">
-	  <h5 class="card-title">Add lead</h5>
+	  <h5 class="card-title">Add deal</h5>
 	  <hr/>
 
 <form id="myForm" method="post" action="{{ route('companies.store.basic.product') }}" enctype="multipart/form-data" >
@@ -114,8 +114,6 @@
 					<input type="text" name="discount_price" class="form-control" id="inputCompareatprice" placeholder="">
 				  </div>
 				</div>
-
-				
 			 
             </div>
 		   </div>
@@ -125,7 +123,7 @@
 			  <p class="fw-bold">Additional info</p>
 				<hr>
 
-				<div class="row g-3">
+			 <div class="row g-3">
 				<div class="form-group col-md-5">
 				<label for="inputProductTitle" class="form-label">Source channel</label><span class="required-label"> *</span>
 				<select name="brand_id" class="form-select" id="inputProductType">
@@ -153,16 +151,15 @@
 					  </select>
 				  </div>
 			 </div>
-				  <div class="form-group mb-3">
+
+			  <div class="form-group mb-3">
 				<label for="inputProductDescription" class="form-label">Description</label><span class="required-label"> *</span>
 				<textarea name="short_descp" class="form-control" id="inputProductDescription" rows="3"></textarea>
 			  </div>
 
-
 				  <div class="col-12">
 					  <div class="d-grid">
 					  	<input type="submit" class="btn btn-success px-4" value="Save" />
-                          
 					  </div>
 				  </div>
 			  </div> 

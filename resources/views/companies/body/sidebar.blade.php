@@ -60,9 +60,9 @@
 						<div class="menu-title">Deals</div>
 					</a>
 					<ul>
-						<li> <a href="{{ route('companies.add.leads')}}"><i class="bx bx-grid-small"></i>Add deals</a>
+						<li> <a href="{{ route('companies.add.deals')}}"><i class="bx bx-grid-small"></i>Add deals</a>
 						</li>
-						<li> <a href="{{ route('companies.all.leads')}}"><i class="bx bx-grid-small"></i>All deals</a>
+						<li> <a href="{{ route('companies.all.deals')}}"><i class="bx bx-grid-small"></i>All deals</a>
 						</li>
 					</ul>
 				</li>
@@ -182,6 +182,14 @@
 					<a class="" href="{{ route('companies.interested')}}">
 						<div class="parent-icon"><i class="bx bx-heart"></i>
 						</div>
+						<div class="menu-title">Activities</div>
+					</a>
+				</li>
+
+				<li>
+					<a class="" href="{{ route('companies.interested')}}">
+						<div class="parent-icon"><i class="bx bx-heart"></i>
+						</div>
 						<div class="menu-title">Interested</div>
 					</a>
 				</li>
@@ -207,7 +215,9 @@
 						<div class="menu-title">Settings</div>
 					</a>
 					<ul>
-						<li> <a href="#"><i class="bx bx-grid-small"></i>Import data</a>
+						<li> <a href="{{ route('companies.import.view')}}"><i class="bx bx-grid-small"></i>Import data</a>
+						</li>
+						<li> <a href="{{ route('companies.import.list.view')}}"><i class="bx bx-grid-small"></i>Import list data</a>
 						</li>
 						<li> <a href="#"><i class="bx bx-grid-small"></i>Export data</a>
 						</li>
