@@ -9,6 +9,33 @@ use Illuminate\Support\Facades\Hash;
 
 class AdminController extends Controller
 {
+
+    //Talentme 
+    public function AdminStaffUsers(){
+
+        return view('admin.talentme.staff_users');
+    
+    } // End method
+
+    public function AdminStaffRoles(){
+
+        return view('admin.talentme.staff_users_roles');
+    
+    } // End method
+
+    public function AdminStaffLog(){
+
+        return view('admin.talentme.staff_users_log');
+    
+    } // End method
+
+    public function AdminAiTool(){
+
+        return view('admin.talentme.ai_tool');
+    
+    } // End method
+
+    
     public function AdminDashboard(){
 
         return view('admin.index');
